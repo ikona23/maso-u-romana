@@ -1,9 +1,14 @@
 import React from 'react'
 
 export default class Nav extends React.Component {
-  render(){
-    return (
-      <h1>Nav</h1>
-    )
+
+  render() {
+
+
+    return(
+      <div>
+        <h2>nav</h2>
+      </div>
+  )
   }
 }

@@ -1,23 +1,20 @@
 import React from 'react'
-import Nav from './Nav'
 import Title from './Header/Title'
+import Nav from './Header/Nav'
 
 export default class Header extends React.Component {
-  constructor() {
-    super()
-      this.state = {name: "peter"}
-  }
 
 render() {
-  setTimeout(() => {
-    this.setState({name: "Kubo"})
-  },3000)
+  console.log(this.props);
   return (
+
     <div>
-    <h1>Header {this.state.name}</h1>
+    <h4>I am living in {this.props.town}</h4>
+    <h4>Welcome:  {this.props.title}</h4>
 
     <Title/>
-    <Nav/>
+<div>
+</div>
   </div>
     )
   }
